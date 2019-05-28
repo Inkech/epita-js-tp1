@@ -9,6 +9,13 @@
 *
 */
 
-const add = () => {};
+import list from './list'
+import setState from '../store'
+
+const add = elt => {
+    let l = list();
+    l.push(elt);
+    setState(l);
+};
 
 export default add;

@@ -8,6 +8,13 @@
 *
 */
 
-const update = () => {};
+import list from './list'
+import setState from '../store'
+
+const update = (i, e) => {
+    let l = list();
+    l[i] = e;
+    setState(l);
+};
 
 export default update;

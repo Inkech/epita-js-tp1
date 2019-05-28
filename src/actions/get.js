@@ -6,7 +6,11 @@
 * - you must use the functions from "../store"
 *
 */
+import list from './list'
 
-const get = () => {};
+const get = i => {
+    let l = list();
+    return l[i];
+};
 
 export default get;
